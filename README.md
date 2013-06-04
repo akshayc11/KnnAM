@@ -25,11 +25,11 @@ Libraries for parallelization of the KNN computation. Also, it uses Boost
 libraries for parsing input files 
 
 ## Current Status:
-DONE: classes and functions related to obtaining the data from a pFile format
+* DONE: classes and functions related to obtaining the data from a pFile format
 have been written, but not tested
-TODO: Makefiles need to be written
-TODO: Test above classes for functionality and accuracy
-TODO: write wrapper for new pFile format
+* TODO: Makefiles need to be written
+* TODO: Test above classes for functionality and accuracy
+* TODO: write wrapper for new pFile format
 
 
 
