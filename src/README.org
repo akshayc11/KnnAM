@@ -31,7 +31,7 @@ point
     + Base: DataBase
       Base Class for DataCPU, DataGPU, DataPFile 
     + Inherited from Base:
-      1. DataPFile:
+      1. DataPFile_old: old implementation of pFile
 	 * Should go out of context once it passes its information to DataCPU
       2. DataCPU:
 	 * 
