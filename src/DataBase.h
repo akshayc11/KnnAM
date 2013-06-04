@@ -25,11 +25,6 @@
 namespace KnnAm {
   class DataBase {
   private:
-    BaseFloat* data_;
-    uint32*    label_;
-    uint32     number_of_points_;
-    uint32     dimension_;
-    uint32     maximum_label_value_;
 
   public:
     DataBase() {};

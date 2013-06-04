@@ -3,7 +3,7 @@
    Akshay Chandrashekaran
    2013/06/03
    Description:
-   This is the implementation of the DataCPU Class which is 
+   This is the implementation of the DataCPU_transpose Class which is 
    derived fro the DataBase Class. 
    It contains the declarations of the functions 
    needed to interface with the data class. 
@@ -20,15 +20,15 @@
    
 */
 
-#ifndef __DataCPU_h__
-#define __DataCPU_h__
+#ifndef __DataCPU_transpose_h__
+#define __DataCPU_transpose_h__
 
 #include <string>
 #include "Global.h"
 #include "DataBase.h"
 
 namespace KnnAm {
-  class DataCPU : public DataBase {
+  class DataCPU_transpose : public DataBase {
   private:
     BaseFloat* data_;
     uint32*    label_;
@@ -36,8 +36,8 @@ namespace KnnAm {
     uint32     dimension_;
     uint32     maximum_label_value_;
   public:
-    DataCPU();
-    virtual ~DataCPU();
+    DataCPU_transpose();
+    virtual ~DataCPU_transpose();
     
     BaseFloat*  get_data(void);
     void        set_data(BaseFloat* data);
@@ -50,13 +50,13 @@ namespace KnnAm {
     uint32      get_maximum_label_value(void);
     void        set_maximum_label_value(uint32 maximum_label_value);
     
-    void load_data(BaseFloat* data,
-		   uint32*    label,
-		   uint32     number_of_points,
-		   uint32     dimension,
-		   uint32     maximum_label_value);
+    void transpose_data(BaseFloat* data,
+			uint32*    label,
+			uint32     number_of_points,
+			uint32     dimension,
+			uint32     maximum_label_value);
   }
 };
 
 
-#endif	/* __DataCPU_h__ */
+#endif	/* __DataCPU_transpose_h__ */
