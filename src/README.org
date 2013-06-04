@@ -12,14 +12,29 @@ distance
 loglik
 point
 
-*** Get the training data
-*** Get the training Labels
-*** Sort the training data index based on the label
-*** Transpose the sorted training data 
-*** Transfer the transposed data into the GPU
-*** Get the testing data
-*** Get the K nearest neighbors and their distances for the test data points
-*** Convert above information into log likelihood for each label for the given point
-*** Store the log likelihood information in output
+*** TODO Get the training data
+*** TODO Get the training Labels
+*** TODO Sort the training data index based on the label
+*** TODO Transpose the sorted training data 
+*** TODO Transfer the transposed data into the GPU
+*** TODO Get the testing data
+*** TODO Get the K nearest neighbors and their distances for the test data points
+*** TODO Convert above information into log likelihood for each label for the given point
+*** TODO Store the log likelihood information in output
 
 
+** Implementation Details:
+*** Iteration 1:
+    Get training data and labels from pFile and store it in the CPU
+   
+**** Objects:
+    + Base: DataBase
+      Base Class for DataCPU, DataGPU, DataPFile 
+    + Inherited from Base:
+      1. DataPFile:
+	 * Should go out of context once it passes its information to DataCPU
+      2. DataCPU:
+	 * 
+    
+   
+    
